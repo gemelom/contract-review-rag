@@ -20,6 +20,12 @@ CHECKLIST_FILE = "data/checklist.csv"
 CLAUSE_REVIEW_PAIR_FILE = "data/clause_review_pair.csv"
 GROUND_TRUTH_FILE = "data/GT_contract_risk.csv"
 
+# LangChain
+LANGCHAIN_TRACING_V2 = os.getenv("LANGCHAIN_TRACING_V2")
+LANGCHAIN_API_KEY_CONFIG = os.getenv("LANGCHAIN_API_KEY")
+LANGCHAIN_PROJECT_CONFIG = os.getenv("LANGCHAIN_PROJECT")
+LANGCHAIN_ENDPOINT_CONFIG = os.getenv("LANGCHAIN_ENDPOINT")
+
 PROMPT_TEMPLATE_STR = """
 You are a professional contract risk assessment expert. Based on the provided background knowledge and the contract clause under review, determine if the clause contains any risks.
 Background Knowledge (from risk checklists and expert cases):
